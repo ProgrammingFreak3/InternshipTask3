@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Iframes Flexbox</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('./images/img1.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .container {
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.75);
+            border-radius: 12px;
+            border: 1px solid rgba(209, 213, 219, 0.3);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: chartreuse;
+        }
+        
+        iframe:hover {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.1);
+            transition: transform 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Display of Iframes through FLexbox </h1>
+    <div class="container">
+        <div class="d-flex justify-content-around">
+            <div class="p-2 bd-highlight">
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/RHKtnBeBHcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-2 bd-highlight">
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/uGyYuXol0RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-2 bd-highlight">
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/Xhb4gc_r0uU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="d-flex justify-content-around">
+            <div class="p-2 bd-highlight">
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/CpI0Uf-rSVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-2 bd-highlight">
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/8_GnMFc4IWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-2 bd-highlight">
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/oRAtGDKeyYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="d-flex justify-content-around">
+            <div class="p-2 bd-highlight">
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/saLcKOmPVlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-2 bd-highlight">
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/E9lXjAkymN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-2 bd-highlight">
+                <iframe width="315" height="315" src="https://www.youtube.com/embed/RHKtnBeBHcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    </ <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

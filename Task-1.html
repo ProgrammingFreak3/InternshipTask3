@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+        
+        .div1,
+        .div2,
+        .div3 {
+            position: relative;
+            opacity: 0.7;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .div1 {
+            background-image: url('./images/img1.jpg');
+            min-height: 100%;
+        }
+        
+        .div2 {
+            background-image: url('./images/img2.png');
+            min-height: 400px;
+        }
+        
+        .div3 {
+            background-image: url('./images/img3.jpg');
+            min-height: 400px;
+        }
+        
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+        
+        .caption span.scroll {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+        
+        .ul-tag {
+            color: #777;
+            background-color: white;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+        }
+        
+        .ol-tag,
+        .dl-tag {
+            color: #ddd;
+            background-color: #282E34;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+        }
+        
+        h3 {
+            text-align: center;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: bold 20px "Lato", sans-serif;
+            color: #111;
+        }
+        
+        p {
+            font: 20px "Lato", sans-serif;
+            color: coral;
+        }
+        
+        dl dt {
+            color: chocolate;
+            font-weight: bold;
+        }
+        
+        @media only screen and (max-device-width: 1024px) {
+            .div1,
+            .div2,
+            .div-3 {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="caption">
+            <span class="scroll">Scroll Down</span>
+        </div>
+    </div>
+
+    <div class="ul-tag">
+        <h3>Benefits of Web Development</h3>
+        <p>Some of them are:</p>
+        <ul>
+            <li>Increased Mobile Traffic.</li>
+            <li>Needs Less Maintenance.</li>
+            <li>Faster Mobile Development at Lower Costs.</li>
+            <li>Faster Web Pages.</li>
+            <li>Less Bounce Rate.</li>
+            <li>Higher Conversion Rates.</li>
+            <li>Improved Search Engine Optimization.</li>
+            <li>Good Branding.</li>
+        </ul>
+    </div>
+
+    <div class="div2">
+        <div class="caption">
+            <span class="scroll">Scroll Down</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="ol-tag">
+            <h3>Why Web Development?</h3>
+            <p>6 Reasons You Should Learn Web Development</p>
+            <ol type="1">
+                <li>Now Hiring! There Are Web Dev Jobs Available</li>
+                <li>A Great Income</li>
+                <li>No Wasted Time in Learning How to Code</li>
+                <li>You Can Work From Anywhere</li>
+                <li>You Can Work at an Awesome Tech Company</li>
+                <li>It's Creative and Fun</li>
+            </ol>
+            <h4 style="text-align: center; color:aqua;">Scroll up and down to really get the feeling of how Parallax Scrolling works.</h4>
+        </div>
+    </div>
+
+
+    <div class="div3">
+        <div class="caption">
+            <span class="scroll">Scroll Up</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="dl-tag">
+            <h3>Web Development Technologies</h3>
+            <p>Frontend Technologies:</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content.</dd>
+                <dt>CSS</dt>
+                <dd>CSS stands for Cascading Style Sheets, and it's used to add style to a web page by dictating how a site is displayed on a browser.</dd>
+                <dt>JavaScript</dt>
+                <dd>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.</dd>
+            </dl>
+            <p>Backend Technologies:</p>
+            <dl>
+                <dt>Python</dt>
+                <dd>There are mainly two Python backend frameworks for web development. They are Django and Flask.</dd>
+                <dt>Java</dt>
+                <dd>Spring. With its concept of Dependency Injection and aspect-oriented programming features, Spring took the development world by storm.</dd>
+                <dt>PHP</dt>
+                <dd>PHP is one of the back-end languages which is known as the scripting language. When a PHP page is requested, the server parses the PHP code, which in most cases results in dynamically created HTML.</dd>
+            </dl>
+            <h4 style="text-align: center; color:aqua;">Scroll up and down to really get the feeling of how Parallax Scrolling works.</h4>
+        </div>
+    </div>
+
+    <div class="div1">
+        <div class="caption">
+            <span class="scroll">That Work's isn't it!!!</span>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+
